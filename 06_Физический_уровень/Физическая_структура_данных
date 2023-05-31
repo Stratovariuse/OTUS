@@ -1,4 +1,4 @@
-# Физическая структра данных
+# Физическая структура данных
 
 - PostgreSQL работает а данными на дисках только через файловую систему
 - EXT3/4 XFS наиболее популярны
@@ -18,3 +18,18 @@ SELECT * FROM pg_tablespace;
 
 \l+
 
+### В каких табличных пространствах находятся БД
+
+```s
+SELECT d.datname as "Name",
+       r.rolname as "Owner",
+       pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",
+       pg_catalog.shobj_description(d.oid, 'pg_database') as "Description",
+       t.spcname as "tablespace"
+FROM pg_catalog.pg_DATABASE d
+  JOIN pg_catalog.pg_roles r ON d.datdba = r.oid
+  JOIN pg_catalog.pg_tablespace t on d.datTABLEspace = t.oid
+ORDER BY 1;
+```
+
+### 
