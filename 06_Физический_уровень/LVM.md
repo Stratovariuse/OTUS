@@ -4,15 +4,15 @@
 
 ### Структура
 
-sda1   sda2   sdv   sdc
+sda1   sda2   sdv   sdc  
+   |      |     |     |  
+-----------------------  
+         VG00  
+-----------------------  
    |      |     |     |
------------------------
-         VG00
------------------------
+ LV0    LV1    LV2   LV3  
    |      |     |     |
- LV0    LV1    LV2   LV3
-   |      |     |     |
- ext3 reiserfs reiserfs xfs
+ ext3 reiserfs reiserfs xfs  
 
 ```s
 apt install lvm2
