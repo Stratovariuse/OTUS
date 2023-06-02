@@ -1,0 +1,6 @@
+* [Cybertec(расширенный PGTUNE)](https://pgconfigurator.cybertec.at/)
+* [Управление ресурсами ядра](https://postgrespro.ru/docs/postgresql/15/kernel-resources)
+* [PGTUNE](https://pgtune.leopard.in.ua/)
+* [THP Linux](https://access.redhat.com/solutions/46111)
+* [Linux HugePages ](https://www.percona.com/blog/why-linux-hugepages-are-super-important-for-database-servers-a-case-with-postgresql/)
+* [Репозиторий](https://github.com/Stratovariuse/PostgreSQL/tree/main/%D0%9B%D0%B8%D0%BC%D0%B8%D1%82%D1%8B/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8)
